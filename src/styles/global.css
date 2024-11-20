@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+/* src/styles/global.css */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+}
+
+/* Custom Styles */
+textarea,
+input,
+select {
+  font-size: 1rem;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover:enabled {
+  background-color: #3182ce;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline-color: #3182ce;
+  border-color: #3182ce;
+}
+
+.error {
+  color: #e53e3e;
+}
+
+.success {
+  background-color: #48bb78;
+  border-color: #38a169;
+  color: #fff;
+}
